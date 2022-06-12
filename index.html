@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7c30501885.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="nav-items">
+            <li><a class="nav-item" href="#Skills">Skills</a></li>
+            <li><a class="nav-item" href="#Code">Code</a></li>
+            <li><a class="nav-item" href="#Experience">Experience</a></li>
+            <li><a class="nav-item" href="#Language">Language</a></li>
+            <li><a class="nav-item" href="#About-me">About me</a></li>
+            <li><a class="nav-item" href="#Education">Education</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <div class="header__wrapper">
+            <header class="header">
+                <img class='header-avatar' src="./img/my_photo.jpg" alt="my-photo">
+                <h1 class="header-desc">Kravtsov Aleksander</h1>
+            </header>
+        </div>
+        <main class="main">
+            <ul class="main__contacts contacts">
+                <li class="contacts__contact">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><b>Location:</b> Mogilev, Belarus</p>
+                </li>
+                <li class="contacts__contact">
+                    <i class="fas fa-envelope"></i>
+                    <p><b>Email:</b> 7250603@gmail.com</p>
+                </li>
+                <li class="contacts__contact">
+                    <i class="fas fa-phone"></i>
+                    <p><b>Phone:</b> +375(33)309-74-94</p>
+                </li>
+            </ul>
+            <div id="Skills" class="main__description skills__wrapper">
+                <aside class="section__header">
+                    <h3>Skills:</h3>
+                </aside>
+                <ul class="main__section skills">
+                    <li class="skills__skill">
+                        <i class="fas fa-file-code"></i>
+                        HTML, CSS, SCSS, BEM
+                    </li>
+                    <li class="skills__skill">
+                        <i class="fab fa-node-js"></i>
+                        JavaScript
+                    </li>
+                    <li class="skills__skill">
+                        <i class="fab fa-react"></i>
+                        React
+                    </li>
+                    <li class="skills__skill">
+                        <i class="fab fa-replyd"></i>
+                        Redux
+                    </li>
+                    <li class="skills__skill">
+                        <i class="fab fa-github-square"></i>
+                        Git
+                    </li>
+                </ul>
+            </div>
+            <div id="Code" class="main__description">
+                <aside class="section__header">
+                    <h3>Code example :</h3>
+                </aside>
+                <div class="code main__section">
+                    <pre class="code__wrapper">
+                        <code class="code-example">
+function explode(s) {
+    let arr = s.split('')
+    let result = ''
+    arr.forEach(item =>{
+      for(let i = +item; i>0; i--){
+        result += item
+      }
+    })
+    return result;
+  }
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div id="Experience" class="main__description">
+                <aside class="section__header">
+                    <h3>Experience :</h3>
+                </aside>
+                <div class="experience main__section">
+                    <a class="experience__link" href="https://byrka-byrka.github.io/project-birds_kravtsov/"><i class="fas fa-link"></i> My HTML project</a>
+                    <a class="experience__link" href="https://byrka-byrka.github.io/react-XIStore/"><i class="fas fa-link"></i> My React project</a>
+                </div>
+            </div>
+            <div id="Language" class="main__description">
+                <aside class="section__header">
+                    <h3>Language :</h3>
+                </aside>
+                <div class="language main__section">
+                    <p><b>Russian:</b> native speaker</p>
+                    <p><b>English:</b> A2</p>
+                </div>
+            </div>
+            <div id="Education" class="main__description">
+                <aside class="section__header">
+                    <h3>About me :</h3>
+                </aside>
+                <div id="About-me" class="about-me main__section">
+                    <p class="about-me__content">
+                        I graduated from Mogilev State A. Kuleshov University.
+                        Specialization: Sports and Tourism Management.
+                        Qualification: Teacher.
+                        I am studying information technologies for 1 year.
+                        I think that i self disciplined, sociable, open minded person.
+                        I realize that future is technology and development, that’s why i chose IT sphere.
+                    </p>
+                </div>
+            </div>
+            <div class="main__description">
+                <aside class="section__header">
+                    <h3>Courses :</h3>
+                </aside>
+                <div class="courses main__section">
+                    <div class="courses__course">
+                        <b>udemy:</b>
+                        <div class="course__links">
+                            <a class="course__link" href="https://www.udemy.com/course/webdeveloper/"><i class="fas fa-link"></i> WEB-developer 2021</a>
+                            <a class="course__link" href="https://www.udemy.com/course/javascript_full/"><i class="fas fa-link"></i> The Complete JavaScript Course</a>
+                        </div>
+                    </div>
+                    <div class="courses__course">
+                        <b>IT STEP Academy:</b>
+                        <a class="course__link" href="https://front-end.itstep.by/"><i class="fas fa-link"></i> FRONT-END course</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-links__wrapper">
+                <a href="https://github.com/Byrka-Byrka"><i class="fab fa-github"></i></a>
+                <a href="https://rs.school/js/"><img class="rss-icon" src="./img/rs_school_js.svg" alt="rss-icon"></a>
+            </div>
+            <p>made by Kravtsov Alexander</p>
+            <p>2022</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
